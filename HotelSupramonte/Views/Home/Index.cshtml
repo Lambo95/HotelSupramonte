@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron text-center">
+    <h1>Hotel Supramonte</h1>
+    <p>Benvenuto!</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Prenota!</h2>
+        <button class="btn btn-default">
+         @Html.ActionLink("Prenota","CreateClienti","Clienti")
+        </button>
+    </div>
+    <div class="col-md-4">
+        <h2>Accedi all' area riservata</h2>
+        <button class="btn btn-default">
+            @Html.ActionLink("Accedi", "LoginView")
+        </button>
+    </div>
+</div>
